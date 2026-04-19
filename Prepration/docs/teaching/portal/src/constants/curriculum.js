@@ -1,0 +1,28 @@
+export const TOPICS = [
+  { id: '01', slug: 'react', title: 'React', file: '01-react.md', prereqs: [], difficulty: 'Beginner→Expert', readTime: '45 min' },
+  { id: '02', slug: 'spring-boot', title: 'Spring Boot (Java)', file: '02-spring-boot.md', prereqs: [], difficulty: 'Beginner→Expert', readTime: '60 min' },
+  { id: '03', slug: 'kotlin', title: 'Kotlin', file: '03-kotlin.md', prereqs: ['02'], difficulty: 'Intermediate→Expert', readTime: '45 min' },
+  { id: '04', slug: 'python-django', title: 'Python & Django', file: '04-python-django.md', prereqs: [], difficulty: 'Beginner→Expert', readTime: '50 min' },
+  { id: '05', slug: 'nodejs', title: 'Node.js', file: '05-nodejs.md', prereqs: [], difficulty: 'Beginner→Advanced', readTime: '35 min' },
+  { id: '06', slug: 'android', title: 'Android (Jetpack Compose)', file: '06-android.md', prereqs: ['03'], difficulty: 'Intermediate→Expert', readTime: '55 min' },
+  { id: '07', slug: 'tauri-rust', title: 'Tauri & Rust', file: '07-tauri-rust.md', prereqs: ['01'], difficulty: 'Intermediate→Advanced', readTime: '40 min' },
+  { id: '08', slug: 'postgresql', title: 'PostgreSQL', file: '08-postgresql.md', prereqs: [], difficulty: 'Beginner→Expert', readTime: '50 min' },
+  { id: '09', slug: 'kafka', title: 'Apache Kafka', file: '09-kafka.md', prereqs: ['08'], difficulty: 'Intermediate→Expert', readTime: '55 min' },
+  { id: '10', slug: 'authentication', title: 'Authentication & Keycloak', file: '10-authentication-keycloak.md', prereqs: ['01', '02'], difficulty: 'Intermediate→Expert', readTime: '50 min' },
+  { id: '11', slug: 'aws', title: 'AWS Cloud Services', file: '11-aws.md', prereqs: [], difficulty: 'Beginner→Advanced', readTime: '45 min' },
+  { id: '12', slug: 'docker', title: 'Docker', file: '12-docker.md', prereqs: [], difficulty: 'Beginner→Advanced', readTime: '40 min' },
+  { id: '13', slug: 'kubernetes-helm', title: 'Kubernetes & Helm', file: '13-kubernetes-helm.md', prereqs: ['12'], difficulty: 'Intermediate→Expert', readTime: '55 min' },
+  { id: '14', slug: 'terraform', title: 'Terraform', file: '14-terraform.md', prereqs: ['11', '13'], difficulty: 'Intermediate→Expert', readTime: '50 min' },
+  { id: '15', slug: 'github-actions', title: 'GitHub Actions', file: '15-github-actions.md', prereqs: ['12'], difficulty: 'Beginner→Advanced', readTime: '40 min' },
+  { id: '16', slug: 'jenkins', title: 'Jenkins', file: '16-jenkins.md', prereqs: ['12'], difficulty: 'Intermediate→Advanced', readTime: '40 min' },
+  { id: '17', slug: 'argocd', title: 'ArgoCD', file: '17-argocd.md', prereqs: ['13'], difficulty: 'Intermediate→Advanced', readTime: '35 min' },
+  { id: '18', slug: 'ansible', title: 'Ansible', file: '18-ansible.md', prereqs: [], difficulty: 'Beginner→Advanced', readTime: '40 min' },
+  { id: '19', slug: 'observability', title: 'Observability & Monitoring', file: '19-observability.md', prereqs: ['13'], difficulty: 'Intermediate→Advanced', readTime: '45 min' },
+  { id: '20', slug: 'testing', title: 'Testing', file: '20-testing.md', prereqs: ['01', '02'], difficulty: 'Beginner→Expert', readTime: '50 min' },
+  { id: '21', slug: 'code-quality', title: 'Code Quality & Linting', file: '21-code-quality.md', prereqs: ['01', '02'], difficulty: 'Beginner→Intermediate', readTime: '30 min' },
+  { id: '22', slug: 'data-export', title: 'Data Export & File Processing', file: '22-data-export.md', prereqs: ['01', '02'], difficulty: 'Beginner→Intermediate', readTime: '30 min' },
+  { id: '23', slug: 'external-integrations', title: 'External Integrations', file: '23-external-integrations.md', prereqs: ['02', '09'], difficulty: 'Advanced→Expert', readTime: '45 min' },
+  { id: '24', slug: 'shared-patterns', title: 'Shared Patterns & Conventions', file: '24-shared-patterns.md', prereqs: [], difficulty: 'Expert', readTime: '35 min' },
+]
+
+export const TOPIC_MAP = Object.fromEntries(TOPICS.map(t => [t.id, t]))
